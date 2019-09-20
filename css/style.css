@@ -1,0 +1,72 @@
+.navbar {
+    padding: 2.68rem 1rem;
+
+}
+
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+
+}
+
+.btn-secondary {
+    background-color: #8a4cdb;
+    border-radius: 0;
+    margin-left: 22px;
+    width: 86px;
+    height: 27px;
+    align-self: center;
+    line-height: 6px;
+
+}
+
+.nav-link {
+
+    margin-left: 15px;
+}
+
+.fa-5x {
+
+    font-size: 4.5em;
+
+}
+
+.play-icon {
+    padding-bottom: 32px;
+    padding-top: 18px;
+
+}
+
+.banner-area {
+    background-color: #8a4cdb;
+    color: #fff;
+    padding-top: 73px;
+    padding-bottom: 83px;
+    position: relative;
+
+}
+
+.banner-area .btn-secondary {
+    width: 152px;
+    height: 37px;
+}
+
+input[type="text"] {
+    padding: 6px;
+}
+
+.tab {
+
+    background-image: url(../images/tab-layout.png);
+    padding-top: 52.5px;
+    padding-bottom: 52.5px;
+    padding-right: 25px;
+    padding-left: 44px;
+    background-repeat: no-repeat;
+    background-position: 29% 3%; 
+    background-size: auto;
+    position: absolute;
+    top: -8%;
+}
+
+
+

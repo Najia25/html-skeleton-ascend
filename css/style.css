@@ -136,6 +136,10 @@
     padding-top: 74px;
 }
 
+.wrapper{
+    display: flex;
+}
+
 .message {
     padding: 69px 9px;
     border: 2px solid #e4e4e4;
@@ -146,6 +150,7 @@
     width: 72%;
     border-radius: 18px;
     position: relative;
+    margin: auto;
 }
 
 blockquote{
@@ -159,7 +164,7 @@ blockquote::after{
     height: 25px;
     background: #fff;
     border-left: 2px solid #e4e4e4;
-    bottom: -21.5%;
+    bottom: -24.5%;
     left: 41%;
     border-bottom: 2px solid #e4e4e4;
     transform: skewX(26deg),rotate(45deg);
@@ -203,15 +208,15 @@ blockquote::after{
     transform: translateX(-6%);
 
 }
-
 .profile-picture {
     width: 60%;
     height: 206px;
     background: #7344b0;
     border-radius: 100%;
     border: 5px solid #ffff;
-    box-shadow: #ededed;
     box-shadow: 0 0 2px 3px #ededed;
+    margin: auto;
+    transform: translateX(-7%);
 }
 
 .customer-detail {
@@ -225,8 +230,61 @@ blockquote::after{
 
     display: inline-block;
     text-align: center;
-    transform: translateX(47%);
+    transform: translateX(98%);
     margin-top: 22px;
     line-height: 12px;
 
 }
+
+footer ul{
+    padding:0px;
+    list-style-type: none;
+}
+
+
+footer ul li a {
+    text-decoration: none !important;
+    color: #c6c6c6;
+}
+
+footer {
+    color: #fff;
+    padding-top: 48px;
+    background: #222;
+}
+footer ul li {
+    line-height: 30px;
+}
+
+footer .column-header {
+    margin-bottom: 19px;
+}
+
+.social-area .column-header{
+    margin-top:40px;
+}
+
+.social-area i {
+    width: 25px;
+    height: 25px;
+    background: #7344b0;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 7px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px;
+
+}
+
+.footer-bottom {
+    background: #7344b0;
+    padding: 12px;
+}
+
+.footer-bottom p {
+    margin-bottom: 0px;
+}
+

@@ -122,13 +122,38 @@
 }
 
 .laptop-area{
-    width:100%;
-    height:301px;
-    background-image: url(../images/laptop.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  background-position: center;
+ 
+}
+.laptop-top {
+    display: flex;
+}
+
+
+
+img.laptop {
+    position: relative;
+    padding-top: 94px;
+}
+
+.intuitive-design {
+    left: 15%;
+}
+
+.dashboard-features {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+}
+
+.features-details {
+    text-align: left;
+    width: 49%;
+}
+
+.dashboard-features img {
+    padding-right: 8px;
+
+    transform: translateY(14%);
 }
 
 .customer-review-area {
@@ -249,9 +274,13 @@ footer ul li a {
 
 footer {
     color: #fff;
-    padding-top: 48px;
     background: #222;
 }
+.footer-top {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
 footer ul li {
     line-height: 30px;
 }

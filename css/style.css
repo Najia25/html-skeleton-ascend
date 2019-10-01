@@ -1,5 +1,12 @@
 /* add webkit value later */
 
+.container{
+    max-width: 71.5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 .btn-secondary {
     background-color: #8a4cdb;
     border-radius: 0;
@@ -56,10 +63,40 @@
 
 .banner-text .btn-secondary.signup {
     width: 152px;
-    height: 37px;
+    height: 36px;
     margin-left: 15px;
+    vertical-align: baseline;
+    box-shadow: 0px 3px 0px 1px #1c1b1b52, inset 2px 7px 9px 0px #f8f9fa33, inset -1px -10px 8px 0px #1d1f2133;
+    border: none;
 
 }
+
+.banner-text .col-7{
+    margin: auto;
+}
+
+.banner-text .banner-text-title {
+    font-size: 50px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.banner-text .banner-text-title span{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.banner-text-content.text-center {
+    width: 63%;
+}
+
+.banner-text-content p {
+    margin-bottom: 0;
+}
+
 
 .banner-text input[type="text"] {
     padding: 6px;
@@ -70,6 +107,7 @@
 .tab {
 
     background-image: url(../images/tab-layout.png);
+
     padding-top: 52.5px;
     padding-bottom: 162.5px;
     padding-right: 53px;
@@ -78,12 +116,19 @@
     background-position:41%;
     background-size: cover;
     position: absolute;
-    top: 5%;
+    top: 12%;
+    right:18%;
 
 }
 
 .tab img{
     display: block;
+}
+
+.order-single{
+        padding: 0px 29px;
+        margin: auto;
+
 }
 
 .order-single img {
@@ -153,8 +198,8 @@ img.laptop {
 }
 
 .advanced-analytics {
-    right: 1%;
-    bottom: -22%;
+    right: -8%;
+bottom: -17%;
 }
 
 .easy-accouning {
@@ -168,8 +213,8 @@ img.laptop {
     position: absolute;
 }
 .inventory-management {
-    left: 5%;
-    bottom: 17%;
+    left: -2%;
+bottom: 17%; 
 }
 
 .features-details {
@@ -188,19 +233,20 @@ img.laptop {
 
 .wrapper{
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .message {
-    padding: 69px 9px;
     border: 2px solid #e4e4e4;
     padding-top: 29px;
-    padding-left: 57px;
-    padding-right: 57px;
+    padding-left: 55px;
+    padding-right: 55px;
     padding-bottom: 17px;
-    width: 72%;
+    width: 71%;
     border-radius: 18px;
     position: relative;
     margin: auto;
+    
 }
 
 blockquote{
@@ -259,14 +305,18 @@ blockquote::after{
 
 }
 .profile-picture {
-    width: 60%;
-    height: 206px;
-    background: #7344b0;
-    border-radius: 100%;
-    border: 5px solid #ffff;
-    box-shadow: 0 0 2px 3px #ededed;
-    margin: auto;
-    transform: translateX(-7%);
+    width: 59%;
+height: 212px;
+background: #7344b0;
+border-radius: 50%;
+border: 5px solid #ffff;
+box-shadow: 0 0 2px 3px #ededed;
+margin: auto;
+transform: translateX(-7%);
+}
+
+h1.section-header {
+    font-size:60px;
 }
 
 .customer-detail {
@@ -280,7 +330,7 @@ blockquote::after{
 
     display: inline-block;
     text-align: center;
-    transform: translateX(98%);
+    transform: translateX(92%);
     margin-top: 22px;
     line-height: 12px;
 
@@ -341,4 +391,126 @@ footer .column-header {
 .footer-bottom p {
     margin-bottom: 0px;
 }
+
+/* -- Responsive --  */
+
+    @media only screen and (max-width: 1440px) {
+        /* styles for browsers larger than 1440px; */
+        .banner-text .banner-text-title {
+            font-size: 44px;
+        }
+        
+        .banner-text .banner-text-title span{
+            font-size: 44px;
+        }
+
+        .tab {
+        top:13%;
+        right:14%;
+        }
+
+        .customer-info {
+            transform: translateX(78%); 
+        }
+
+        .message{
+            width: 74%;
+        }
+        .profile-picture {
+            width: 62%;
+        }
+
+        .customization-options {
+            right: -3%;
+            top: 2%;
+        }
+        .inventory-management {
+            left: 2%;
+            bottom: 17%;
+        }
+        .easy-accouning {
+            left: 28%;
+        }
+        .advanced-analytics {
+            right: -3%;
+        }
+
+        
+    }
+
+    @media only screen and (min-width: 960px) {
+        /* styles for browsers larger than 960px; */
+        .navbar-expand-md .navbar-nav .nav-link{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .banner-text .banner-text-title {
+            font-size: 30px;
+        }
+        .banner-text .banner-text-title span {
+            font-size: 30px;
+        }
+        .play-icon .fa-5x {
+            font-size: 4em;
+        }
+        .banner-text input[type="text"] {
+            margin-top: 22px;
+        }
+        .banner-text .btn-secondary.signup {
+           
+            display: block;
+            transform: translateX(50%);
+            margin-top: 9px;
+        }
+        .tab {
+            padding-top: 51.5px;
+            padding-bottom: 147.5px;
+            padding-right: 44px;
+            padding-left: 40px;
+            background-position: 148%;
+            top: 14%;
+            right: 6%;       
+        }
+        .tab img {
+            max-width: 82%;
+        }
+        .banner-area {
+            padding-top: 60px;
+            padding-bottom: 56px;
+        }
+        .wrapper {
+            flex-wrap: wrap;
+        }
+        .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.order-single {
+    padding: 0px 49px;
+    width: 50%;
+} 
+h1.section-header {
+    font-size:40px;
+}
+        
+
+
+    }
+    @media only screen and (min-width: 2000px) {
+        /* for sumo sized (mac) screens */
+    }
+    @media only screen and (max-device-width: 480px) {
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+    }
+    @media only screen and (device-width: 768px) {
+       /* default iPad screens */
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+    }
 

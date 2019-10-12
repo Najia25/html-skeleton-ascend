@@ -17,3 +17,8 @@ setTimeout("changeImg()", time);
 }
 
 window.onload = changeImg;
+
+if(screen.width >=576){
+  document.laptop.src = './images/laptop-pointer.png';
+}
+

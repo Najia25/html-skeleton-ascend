@@ -45,6 +45,9 @@
     font-size: 4.5em;
 
 }
+.order-single h4 {
+    font-size: 20px;
+}
 
 .play-icon {
     padding-bottom: 32px;
@@ -57,7 +60,7 @@
     color: #fff;
     padding-top: 73px;
     padding-bottom: 83px;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -89,10 +92,6 @@
     font-size: 50px;
 }
 
-.banner-text-content.text-center {
-    width: 63%;
-}
-
 .banner-text-content p {
     margin-bottom: 0;
 }
@@ -103,23 +102,6 @@
     margin-top: 39px;
 }
 
-
-.tab {
-
-    background-image: url(../images/tab-layout.png);
-
-    padding-top: 52.5px;
-    padding-bottom: 162.5px;
-    padding-right: 53px;
-    padding-left: 44px;
-    background-repeat: no-repeat;
-    background-position:41%;
-    background-size: cover;
-    position: absolute;
-    top: 12%;
-    right:18%;
-
-}
 
 .tab img{
     display: block;
@@ -182,7 +164,7 @@
 
 
 
-img.laptop {
+.laptop-area>img {
     position: relative;
     padding-top: 94px;
 }
@@ -242,11 +224,16 @@ bottom: 17%;
     padding-left: 55px;
     padding-right: 55px;
     padding-bottom: 17px;
-    width: 71%;
+    width: 75%;
     border-radius: 18px;
     position: relative;
     margin: auto;
     
+}
+
+.banner-text{
+    position: relative;
+    display: inline-block;
 }
 
 blockquote{
@@ -303,6 +290,10 @@ blockquote::after{
     -ms-transform: translateX(-6%);
     transform: translateX(-6%);
 
+}
+
+.features-details h5 {
+    font-size: 20px;
 }
 .profile-picture {
     width: 59%;
@@ -391,126 +382,96 @@ footer .column-header {
 .footer-bottom p {
     margin-bottom: 0px;
 }
+.banner-text-content{
+    max-width: 64%;
+    /* display: inline-block; */
+  
+    /* position: absolute; */
+    transform: translateX(11%);
+}
 
+.tab-area {
+    background-image: url(../images/tab-layout.png);
+    padding-top: 7.4%;
+    padding-bottom: 23%;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    background-size: cover;
+    position: absolute;
+    top: 1%;
+    right: -53%;
+}
+
+.banner-text-content>p {
+    /* margin: auto;
+    width: 59%; */
+    font-size: 22px;
+}
 /* -- Responsive --  */
 
-    @media only screen and (max-width: 1440px) {
-        /* styles for browsers larger than 1440px; */
-        .banner-text .banner-text-title {
-            font-size: 44px;
-        }
-        
-        .banner-text .banner-text-title span{
-            font-size: 44px;
-        }
+@media (min-width: 576px) { 
 
-        .tab {
-        top:13%;
-        right:14%;
-        }
-
-        .customer-info {
-            transform: translateX(78%); 
-        }
-
-        .message{
-            width: 74%;
-        }
-        .profile-picture {
-            width: 62%;
-        }
-
-        .customization-options {
-            right: -3%;
-            top: 2%;
-        }
-        .inventory-management {
-            left: 2%;
-            bottom: 17%;
-        }
-        .easy-accouning {
-            left: 28%;
-        }
-        .advanced-analytics {
-            right: -3%;
-        }
-
-        
+    .wrapper{
+        flex-wrap: wrap;
     }
 
-    @media only screen and (min-width: 960px) {
-        /* styles for browsers larger than 960px; */
-        .navbar-expand-md .navbar-nav .nav-link{
-            padding-right: 0;
-            padding-left: 0;
-        }
-        .banner-text .banner-text-title {
-            font-size: 30px;
-        }
-        .banner-text .banner-text-title span {
-            font-size: 30px;
-        }
-        .play-icon .fa-5x {
-            font-size: 4em;
-        }
-        .banner-text input[type="text"] {
-            margin-top: 22px;
-        }
-        .banner-text .btn-secondary.signup {
-           
-            display: block;
-            transform: translateX(50%);
-            margin-top: 9px;
-        }
-        .tab {
-            padding-top: 51.5px;
-            padding-bottom: 147.5px;
-            padding-right: 44px;
-            padding-left: 40px;
-            background-position: 148%;
-            top: 14%;
-            right: 6%;       
-        }
-        .tab img {
-            max-width: 82%;
-        }
-        .banner-area {
-            padding-top: 60px;
-            padding-bottom: 56px;
-        }
-        .wrapper {
-            flex-wrap: wrap;
-        }
-        .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-.order-single {
-    padding: 0px 49px;
-    width: 50%;
-} 
-h1.section-header {
-    font-size:40px;
-}
-        
-
-
+    .tab-area{
+        display:none;
     }
-    @media only screen and (min-width: 2000px) {
-        /* for sumo sized (mac) screens */
+    .banner-text .btn-secondary.signup {
+        margin-top: 5%;
+        margin-left: 0;
     }
-    @media only screen and (max-device-width: 480px) {
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .banner-text .banner-text-title, .banner-text .banner-text-title span{
+        font-size: 34px;
     }
-    @media only screen and (device-width: 768px) {
-       /* default iPad screens */
-    }
-    /* different techniques for iPad screening */
-    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-      /* For portrait layouts only */
+    .banner-text-content {
+        max-width: 92%;
+        transform: translateX(3%);
     }
 
-    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-      /* For landscape layouts only */
+    .banner-text-content>p {
+        font-size: 16px;
     }
+
+    .banner-text {
+        display: block;
+        text-align: center;
+    }
+    h1.section-header {
+        font-size: 31px;
+    }
+    .order-single {
+        padding: 0px 80px;
+        /* margin: auto; */
+        margin-bottom: 8%;
+    }.order-area {
+        padding-top: 67px;
+        padding-bottom: 83px;
+    }
+    .show-all-features {
+        margin-top: 20px;
+    }
+    .order-single img {
+        max-width:24%
+    }
+    .top-content {
+        /* margin-top: 174px; */
+        margin-bottom: 51px;
+    }
+    
+
+
+ }
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }
+
 
